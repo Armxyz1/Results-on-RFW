@@ -15,11 +15,26 @@ ElasticFace: https://github.com/fdbtrs/ElasticFace/tree/main
 GhostFace: https://github.com/HamadYA/GhostFaceNets/tree/main   
 SphereFace: https://github.com/clcarwin/sphereface_pytorch   
 
+The model backbones used for each are:  
+AdaFace: r100 WebFace 12M https://drive.google.com/file/d/1dswnavflETcnAuplZj1IOKKP0eM8ITgT/view  
+ArcFace: r100 MS1MV3 https://onedrive.live.com/?authkey=%21AFZjr283nwZHqbA&id=4A83B6B633B029CC%215585&cid=4A83B6B633B029CC  
+ElasticFace: cos+ MS1MV2 https://drive.google.com/drive/folders/19LXrjVNt60JBZP7JqsvOSWMwGLGrcJl5  
+GhostFace: GN_W1.3_S2_ArcFace_epoch48 MS1MV3 https://github.com/HamadYA/GhostFaceNets/releases/download/v1.3/GhostFaceNet_W1.3_S2_ArcFace.h5  
+SphereFace: SphereFace20a Casia https://github.com/clcarwin/sphereface_pytorch/tree/master/model  
+
+All the models can be found at:  
+https://drive.google.com/file/d/1ARA1Lbb4tStk80Dnb3oP-1cX8WYJiCJd/view?usp=sharing  
+https://drive.google.com/drive/folders/1ty44wEqaNGhL-TlyDOoWvotaET7AZ-tp?usp=sharing  
+https://drive.google.com/file/d/1hWZs7z3TZ7DX4naB1K59oM0y9WcaE6FU/view?usp=sharing  
+
+Please download the models, unzip and place the weights file in the respective `models` folder.  
+
 For each folder (except for SphereFace), there are three eval files:  
 `pairs_eval`: Uses AdaFace to generate cropped faces.    
 `pairs_eval_lmks`: Uses RFW landmarks to generate cropped faces.  
 `pairs_eval_lmks_comb`: Uses RFW landmarks on the default buckets, i.e., no gender split.  
 The results have been calculated using RFW landmarks.  
+
 For each model, I have provided my results in folders `lmks`,`results`, and `roc`.
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
