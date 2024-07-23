@@ -15,8 +15,11 @@ ElasticFace: https://github.com/fdbtrs/ElasticFace/tree/main
 GhostFace: https://github.com/HamadYA/GhostFaceNets/tree/main   
 SphereFace: https://github.com/clcarwin/sphereface_pytorch   
 
-For each folder (except for SphereFace), there are two eval files: `pairs_eval` and `pairs_eval_lmks`. The former uses AdaFace to generate cropped faces, while the latter uses RFW landmarks to generate cropped faces. The results have been calculated using RFW landmarks.
-
+For each folder (except for SphereFace), there are three eval files:  
+`pairs_eval`: Uses AdaFace to generate cropped faces.    
+`pairs_eval_lmks`: Uses RFW landmarks to generate cropped faces.  
+`pairs_eval_lmks_comb`: Uses RFW landmarks on the default buckets, i.e., no gender split.  
+The results have been calculated using RFW landmarks.  
 For each model, I have provided my results in folders `lmks`,`results`, and `roc`.
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
