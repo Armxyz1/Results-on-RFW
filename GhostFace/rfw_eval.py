@@ -6,7 +6,7 @@ import os
 import cv2
 import numpy as np
 from matlab_cp2tform import get_similarity_transform_for_cv2
-from ghost_net import ghost_net
+from backbones.ghost_net import ghost_net
 from tensorflow.python.ops.numpy_ops import np_config
 np_config.enable_numpy_behavior()
 import tensorflow as tf
