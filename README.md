@@ -34,6 +34,17 @@ For each folder (except for SphereFace), there are 2 eval files:
 
 For each model, I have provided my results in folders `sims`,`results`, and `roc`.
 
+# Results:
+**Accuracies:**
+![Accuracies](./acc.png "Accuracies")
+
+**FAR Scores**
+![FAR Scores](./far.png "FAR Scores")
+
+**GAR Scores**
+![GAR Scores](./gar.png "GAR Scores")
+
+
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
 [2] Mei Wang, Yaobin Zhang, Weihong Deng. Meta Balanced Network for Fair Face Recognition. TPAMI 2021.  
