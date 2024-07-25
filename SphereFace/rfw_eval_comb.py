@@ -1,19 +1,14 @@
 from __future__ import print_function
 from tqdm import tqdm
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
 from torch.autograd import Variable
 torch.backends.cudnn.benchmark = True
 import os
-import cv2,random,datetime
-import argparse
+import cv2
 import numpy as np
-import zipfile
 
 from matlab_cp2tform import get_similarity_transform_for_cv2
-import net_sphere
+import backbones.net_sphere as net_sphere
 
 def alignment(src_img,src_pts):
     ref_pts = [ [30.2946, 51.6963],[65.5318, 51.5014],
@@ -67,7 +62,6 @@ net.eval()
 net.feature = True
 
 races = ['African','Asian','Caucasian','Indian']
-genders = ['Man','Woman']
 
 African_wom = os.listdir('../images/test/data/African/Woman')
 Caucasian_wom = os.listdir('../images/test/data/Caucasian/Woman')
@@ -146,7 +140,7 @@ for race in races:
             f = output.data
             f1,f2 = f[0],f[2]
             cosdistance = f1.dot(f2)/(f1.norm()*f2.norm()+1e-5)
-            with open(f"./lmks/{race}_lmks.csv", 'a') as f:
+            with open(f"./sims/{race}_sims.csv", 'a') as f:
                 f.write(f"{path1},{path2},{cosdistance},{sim}\n")
         except Exception as e:
             print(e)
