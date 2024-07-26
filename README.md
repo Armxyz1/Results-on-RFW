@@ -35,15 +35,12 @@ For each folder (except for SphereFace), there are 2 eval files:
 For each model, I have provided my results in folders `sims`,`results`, and `roc`.
 
 # Results:
+
+**TPRs at FPR= 10^(-3)**
+![TPRs at FPR= 10^(-3)](./tpr@E-03.png "TPRs at FPR= 10^(-3)")
+
 **Accuracies:**
 ![Accuracies](./acc.png "Accuracies")
-
-**FAR Scores**
-![FAR Scores](./far.png "FAR Scores")
-
-**GAR Scores**
-![GAR Scores](./gar.png "GAR Scores")
-
 
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
