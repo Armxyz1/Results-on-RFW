@@ -41,10 +41,10 @@ For each model, I have provided my results in folders `sims`,`results`, and `roc
 
 # Results:
 
-**TPRs at FPR $\mathbf{=10^{-3}}$**
+**TPRs at FPR $\mathbf{ = 10^{-3} }$**
 ![TPRs at FPR= 10^(-3)](./TPR@FPR=E-03.png "TPRs at FPR= 10^(-3)")
 
-**TPRs at FPR $\mathbf{=10^{-1}}$**
+**TPRs at FPR $\mathbf{ = 10^{-1} }$**
 ![TPRs at FPR= 10^(-1)](./TPR@FPR=E-01.png "TPRs at FPR= 10^(-1)")
 
 
