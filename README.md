@@ -3,7 +3,7 @@ These are the results obtained on RFW (test) dataset on various models, @ DRDO Y
 
 # Data Preparation
 To run these, I segregated the RFW classes into two sub classes of Man and Woman, using DeepFace model https://github.com/serengil/deepface.  
-To obtain the data, download RFW dataset (http://www.whdeng.cn/RFW/index.html) place it in the repository in a directory `images`. Next, copy the `./data_prep` directory into `images` and run `./images/data_prep/data_prep.ipynb`. At the end, your `images` directory structure should look like `./sample_images`.
+To obtain the data, download RFW dataset[http://www.whdeng.cn/RFW/index.html] place it in the repository in a directory `images`. Next, copy the `./data_prep` directory into `images` and run `./images/data_prep/data_prep.ipynb`. At the end, your `images` directory structure should look like `./sample_images`.
 
 The dataset has been taken (and adapted from) from: http://www.whdeng.cn/RFW/index.html
 
