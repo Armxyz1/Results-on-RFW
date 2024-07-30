@@ -19,7 +19,7 @@ The model backbones used for each are:
 **AdaFace**: ***r100 WebFace 12M*** https://drive.google.com/file/d/1dswnavflETcnAuplZj1IOKKP0eM8ITgT/view  
 **ArcFace**: ***r100 MS1MV3*** https://onedrive.live.com/?authkey=%21AFZjr283nwZHqbA&id=4A83B6B633B029CC%215585&cid=4A83B6B633B029CC  
 **ElasticFace**: ***cos+ MS1MV2*** https://drive.google.com/drive/folders/19LXrjVNt60JBZP7JqsvOSWMwGLGrcJl5  
-**GhostFace**: ***GN_W1.3_S2_ArcFace_epoch48 MS1MV3*** https://github.com/HamadYA/GhostFaceNets/releases/download/v1.3/GhostFaceNet_W1.3_S2_ArcFace.h5 , https://www.kaggle.com/datasets/ipythonx/ghostnetpretrained/data , and https://www.kaggle.com/datasets/tempusme/ghostfacenet  
+**GhostFace**: ***GN_W1.3_S2_ArcFace_epoch48 MS1MV3*** https://www.kaggle.com/datasets/tempusme/ghostfacenet  
 **SphereFace**: ***SphereFace20a Casia*** https://github.com/clcarwin/sphereface_pytorch/tree/master/model  
 
 All the models can be found at:  
