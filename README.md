@@ -31,6 +31,11 @@ Please download the models, unzip and place the weights file in the respective `
 For each folder (except for SphereFace), there are 2 eval files:  
 `rfw_eval`: Uses RFW landmarks to generate cropped faces.  
 `rfw_eval_comb`: Uses RFW landmarks on the default buckets, i.e., no gender split.  
+and 2 count files:  
+`count`: Gets numbers for `rfw_eval`.    
+`count_comb`: Gets numbers for `rfw_eval_comb`.  
+
+Run the `rfw_eval` file(s) to generate similarity scores, then run `count` file(s) to get the numbers, tpr, fpr, and thresholds. To get the graphs, pairs and tables, run `ROC_curves`, `separate_pairs`, and `create_table` files.
 
 For each model, I have provided my results in folders `sims`,`results`, and `roc`.
 
