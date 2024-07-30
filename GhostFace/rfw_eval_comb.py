@@ -37,37 +37,6 @@ def alignment(src_img,src_pts):
     face_img = cv2.warpAffine(src_img, tfm, crop_size)
     return face_img
 
-
-def KFold(n=6000, n_folds=10, shuffle=False):
-    folds = []
-    base = list(range(n))
-    for i in range(n_folds):
-        test = base[i*n/n_folds:(i+1)*n/n_folds]
-        train = list(set(base)-set(test))
-        folds.append([train,test])
-    return folds
-
-def eval_acc(threshold, diff):
-    y_true = []
-    y_predict = []
-    for d in diff:
-        same = 1 if float(d[2]) > threshold else 0
-        y_predict.append(same)
-        y_true.append(int(d[3]))
-    y_true = np.array(y_true)
-    y_predict = np.array(y_predict)
-    accuracy = 1.0*np.count_nonzero(y_true==y_predict)/len(y_true)
-    return accuracy
-
-def find_best_threshold(thresholds, predicts):
-    best_threshold = best_acc = 0
-    for threshold in thresholds:
-        accuracy = eval_acc(threshold, predicts)
-        if accuracy >= best_acc:
-            best_acc = accuracy
-            best_threshold = threshold
-    return best_threshold
-
 races = ['African','Asian','Caucasian','Indian']
 
 African_wom = os.listdir('../images/test/data/African/Woman')
@@ -152,8 +121,8 @@ for race in races:
                 cosdistance = cosdistance.cpu().numpy().item()
 
                 """ Tensorflow code:"""
-                # f1 = model(i1)
-                # f2 = model(i2)
+                # f1 = model.predict(i1)
+                # f2 = model.predict(i2)
                 # cosdistance = np.dot(f1,f2.T)/(np.linalg.norm(f1)*np.linalg.norm(f2)+1e-5)
                 # cosdistance = cosdistance.item()
 
