@@ -44,9 +44,6 @@ For each model, I have provided my results in folders `sims`,`results`, and `roc
 **TPRs at FPR $\mathbf{=10^{-3}}$**
 ![TPRs at FPR= 10^(-3)](./tpr@E-03.png "TPRs at FPR= 10^(-3)")
 
-**Accuracies:**
-![Accuracies](./acc.png "Accuracies")
-
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
 [2] Mei Wang, Yaobin Zhang, Weihong Deng. Meta Balanced Network for Fair Face Recognition. TPAMI 2021.  
