@@ -12,7 +12,7 @@ The code as been adapted from:
 **AdaFace**: https://github.com/mk-minchul/AdaFace   
 **ArcFace**: https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch   
 **ElasticFace**: https://github.com/fdbtrs/ElasticFace/tree/main   
-**GhostFace**: https://github.com/HamadYA/GhostFaceNets/tree/main , https://github.com/Hazqeel09/ellzaf_ml , https://www.kaggle.com/datasets/ipythonx/ghostnetpretrained/data and https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnet_pytorch    
+**GhostFace**: https://github.com/HamadYA/GhostFaceNets/tree/main , and https://www.kaggle.com/datasets/tempusme/ghostfacenet    
 **SphereFace**: https://github.com/clcarwin/sphereface_pytorch   
 
 The model backbones used for each are:  
