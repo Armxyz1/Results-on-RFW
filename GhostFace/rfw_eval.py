@@ -103,7 +103,7 @@ for race in races:
                 f1 = torch.Tensor(f1).to('cuda').view(-1)
                 f2 = torch.Tensor(f2).to('cuda').view(-1)
                 with torch.no_grad():
-                    cosdistance = torch.dot(f1,f2)/(f1.norm()*f2.norm())
+                    cosdistance = torch.dot(f1,f2)/(f1.norm()*f2.norm()+1e-5)
                 cosdistance = cosdistance.cpu().numpy().item()
                 with open(f"./sims/{race}_{gender}_sims.csv", 'a') as f:
                     f.write(f"{path1},{path2},{cosdistance},{sim}\n")
