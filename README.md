@@ -47,7 +47,7 @@ For each model, I have provided my results in folders `sims`,`results`, and `roc
 **TPRs at FPR $\mathbf{ = 10^{-1} }$**
 ![TPRs at FPR= 10^(-1)](./TPR@FPR=E-01.png "TPRs at FPR= 10^(-1)")
 
-
+Clearly there's a racial bias with the SOTA models that needs to be fixed!
 # Citations:  
 [1] Mei Wang, Weihong Deng, Jiani Hu, Xunqiang Tao, Yaohai Huang. Racial Faces in the Wild: Reducing Racial Bias by Information Maximization Adaptation Network. ICCV2019.  
 [2] Mei Wang, Yaobin Zhang, Weihong Deng. Meta Balanced Network for Fair Face Recognition. TPAMI 2021.  
